@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
     private void insertUser(){
         //Here we will handle the http request to insert user to mysql db
         //Creating a RestAdapter
-        RestAdapter adapter = new RestAdapter.Builder().setEndpoint(ROOT_URL) //Setting the Root URL
+        RestAdapter adapter = new RestAdapter.Builder()
+                .setEndpoint(ROOT_URL) //Setting the Root URL
                 .build(); //Finally building the adapter
 
         //Creating object for our interface
